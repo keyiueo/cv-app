@@ -1,0 +1,115 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #2c2d48;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.form-container {
+    background: #505484;
+    padding: 2.5rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 700px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #4d64a4;
+    font-weight: 600;
+    border-bottom: 2px solid #4d64a4;
+    padding-bottom: 5px;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid #3C5291;
+}
+
+::placeholder {
+    color: #bbb;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3C5291;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #5e73ae;
+}
+
+button:active {
+    background-color: #25315e;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+nav button {
+    background: none;
+    border: 2px solid #3C5291;
+    color: #3C5291;
+    padding: 8px 14px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav button:hover, nav button:focus {
+    background-color: #475d97;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 90%;
+        padding: 2rem;
+    }
+}

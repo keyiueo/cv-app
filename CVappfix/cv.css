@@ -1,0 +1,134 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #eff2ff;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 800px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #3C5291;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #3C5291;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #555;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    color: #3C5291;
+    border-bottom: 2px solid #3C5291;
+    padding-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background: #f1f1f1;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    border-left: 3px solid #3C5291;
+    margin-top: 20px;
+}
+
+.timeline-container {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-container::before {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    background: #3C5291;
+    border-radius: 50%;
+}
+
+.content {
+    background: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body {
+    background: #e6f1fc;
+    color: #333;
+    padding: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+.cv-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 673px; /*lebar max CV */
+    margin-bottom: 43px; /*jarak sm tombol logout */
+    flex-grow: 1; 
+}
+
+.logout-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+.logout-btn {
+    padding: 10px;
+    background: #3C5291;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    width: 500px;
+    display: inline-block;
+}
+
+.logout-btn:hover {
+    background: #2b3a70;
+}
